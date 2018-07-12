@@ -49,8 +49,8 @@ Seguindo o contexto do aplicativo “Perdeu?” e fazendo uso da ferramenta de m
 
 Uma previsão do diagrama de classes referente a camada modelo da aplicação pode ser observada na figura abaixo. Por questões de isolamento da camada de negócios, não estão ilustradas neste diagrama classes referente a interfaces (Atividades) ou Adaptadores.
 
-<p class="center">
-	<img src="docs/modeling/ClassDiagram.png" width="60%" />
+<p align="center">
+	<img src="docs/modeling/ClassDiagram.png" width="75%" />
 </p>
 
 - Usuário: Ator primário do sistema, entre suas ações realiza o cadastro de Achados e Perdidos;
@@ -69,8 +69,8 @@ Uma previsão do diagrama de classes referente a camada modelo da aplicação po
 
 Um exemplo de interação com o sistema é ilustrado abaixo, note que a ação “Registrar Perda” é análoga a ação “Registar Achado”.
 
-<p class="center">
-	<img src="docs/modeling/SequenceDiagram.png" width="60%" />
+<p align="center">
+	<img src="docs/modeling/SequenceDiagram.png" width="75%" />
 </p>
 
 <a name="navegacao"></a>
@@ -78,14 +78,14 @@ Um exemplo de interação com o sistema é ilustrado abaixo, note que a ação �
 
 O diagrama abaixo ilustra o processo básico de navegação entre as diferentes Activities ​e Fragments.
 
-<p class="center">
-	<img src="docs/modeling/StatemachineDiagram.png" width="60%" />
+<p align="center">
+	<img src="docs/modeling/StatemachineDiagram.png" width="75%" />
 </p>
 
 ## Cronograma
 
 O cronograma de implementação segue o seguinte planejamento:
 
-<p class="center">
-	<img src="docs/cronograma.png" width="50%" />
+<p align="center">
+	<img src="docs/cronograma.png" width="65%" />
 </p>
