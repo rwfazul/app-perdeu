@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Achou um item na UFSM?"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_achado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@android:drawable/ic_menu_gallery"
+                android:hapticFeedbackEnabled="false"
+                android:minHeight="150dp"
+                android:minWidth="150dp" />
+
+            <Button
+                android:id="@+id/bnt_upload_achado"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Adicionar imagem do achado"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/nome_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="O que você encontrou?"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nome_item_perdido"
+                android:layout_marginTop="20dp"
+                android:text="Selecione a categoria do item:"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/categoria_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="10dp"
+                android:entries="@array/categorias_item" />
+
+            <EditText
+                android:id="@+id/unidades_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoria_item_perdido"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Quantas unidades foram encontradas?"
+                android:inputType="numberSigned|numberDecimal" />
+
+            <EditText
+                android:id="@+id/lugar_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unidades_item_perdido"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Em que lugar você encontrou este item?"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/lugar_atual_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lugar_item_perdido"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Ele está com você agora? Se não, onde?"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/descricao_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/preferencia_item_perdido"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Fale um pouco mais sobre este achado. Quais são suas principais características?"
+                android:inputType="textMultiLine"
+                android:selectAllOnFocus="false"
+                android:singleLine="false" />
+
+            <Button
+                android:id="@+id/btn_novo_achado"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descricao_item_perdido"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Registar Achado"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

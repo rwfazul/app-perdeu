@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:checkable="true"
+            android:checked="true"
+            android:title="Início" />
+    </group>
+
+    <item android:title="Gerenciar">
+        <menu>
+            <item
+                android:id="@+id/nav_meus_achados"
+                android:checkable="true"
+                android:title="Meus Achados" />
+            <item
+                android:id="@+id/nav_meus_perdidos"
+                android:checkable="true"
+                android:title="Meus Perdidos" />
+            <item
+                android:id="@+id/nav_novo_achado"
+                android:checkable="true"
+                android:title="Novo Achado" />
+            <item
+                android:id="@+id/nav_novo_perdido"
+                android:checkable="true"
+                android:title="Novo Perdido" />
+        </menu>
+    </item>
+
+    <item android:title="Geral">
+        <menu>
+            <item
+                android:id="@+id/nav_todos_achados"
+                android:checkable="true"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="Todos os Achados" />
+            <item
+                android:id="@+id/nav_todos_perdidos"
+                android:checkable="true"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="Todos os Perdidos" />
+        </menu>
+    </item>
+
+</menu>

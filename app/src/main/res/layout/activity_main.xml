@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context="br.com.perdeu.MainActivity">
+
+    <Button
+        android:id="@+id/login_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="93dp"
+        android:background="@drawable/com_facebook_button_background"
+        android:text="Logar com o FaceBook"
+        android:textColor="@color/cardview_light_background" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:elegantTextHeight="false"
+        android:fontFamily="casual"
+        android:text="erdeu?"
+        android:textSize="44sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="rwfazul@inf.ufsm.br   2018/01"
+        android:textColor="@color/cardview_dark_background" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5"
+        android:adjustViewBounds="true"
+        android:maxHeight="70dp"
+        android:maxWidth="70dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/perdeu_icon" />
+
+</RelativeLayout>

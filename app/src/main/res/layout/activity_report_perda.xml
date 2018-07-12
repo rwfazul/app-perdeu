@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:orientation="vertical"
+    tools:context="br.com.perdeu.ReportPerdaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Informações sobre o achado"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_item_achado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="6dp"
+        android:minHeight="150dp"
+        android:minWidth="150dp"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/nome_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/categoria_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/unidades_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lugar_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lugar_atual_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/descricao_item_achado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="É seu item?"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_relato_perda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Enviar mensagem"
+                android:textColor="@color/cardview_light_background" />
+
+            <Button
+                android:id="@+id/btn_alerta_perda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:text="Gerar alerta de perda"
+                android:textColor="@color/cardview_light_background" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

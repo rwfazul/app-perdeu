@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.perdeu.EditPerdidoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+
+            <ImageView
+                android:id="@+id/edit_img_item_perdido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/ic_menu_gallery"
+                android:hapticFeedbackEnabled="false"
+                android:minHeight="150dp"
+                android:minWidth="150dp" />
+
+            <Button
+                android:id="@+id/bnt_upload_item_perdido"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Adicionar imagem do perdido"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/nome_item_perdido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="O que você perdeu?"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Selecione a categoria do item:"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/categoria_item_perdido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:entries="@array/categorias_item" />
+
+            <EditText
+                android:id="@+id/unidades_item_perdido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Quantas unidades foram encontradas?"
+                android:inputType="numberSigned|numberDecimal" />
+
+            <EditText
+                android:id="@+id/lugar_item_perdido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Você tem alguma ideia de onde perdeu?"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/preferencia_item_perdido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Em que lugar você preferiria apanhá-lo?"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/descricao_item_perdido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Fale um pouco mais sobre este perdido. Quais são suas principais características?"
+                android:inputType="textMultiLine"
+                android:selectAllOnFocus="false"
+                android:singleLine="false" />
+
+            <Button
+                android:id="@+id/btn_editar_perdido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Editar Perdido"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_remover_perdido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="?attr/colorError"
+                android:text="Remover Perdido"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

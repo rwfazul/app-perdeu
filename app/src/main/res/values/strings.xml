@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Perdeu?</string>
+    <string name="facebook_app_id">FACEBOOK-APP-ID</string>
+    <string name="fb_login_protocol_scheme">FACEBOOK-LOGIN-PROTOCOL-SCHEME</string>
+    <array name="categorias_item">
+        <item>Alimento</item>
+        <item>Bolsa</item>
+        <item>Caderno</item>
+        <item>Carregador</item>
+        <item>Carteira</item>
+        <item>Celular</item>
+        <item>Chave</item>
+        <item>Dinheiro</item>
+        <item>Fonde de ouvido</item>
+        <item>Garrafa</item>
+        <item>Guarda-chuva</item>
+        <item>Livro ou xeróx</item>
+        <item>Mochila</item>
+        <item>Notebook</item>
+        <item>Relógio</item>
+        <item>Remédio</item>
+        <item>Roupa</item>
+        <item>Outro</item>
+    </array>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
