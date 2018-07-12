@@ -1,11 +1,13 @@
 # app-perdeu
 
+Este aplicativo foi desenvolvido na disciplina ELC1001 - Sistemas de Computação Móvel. 
+
 ## Sumário
 
 - [Objetivos](#objetivos)
 - [Justificativa](#justificativa)
 - [Requisitos](#requisitos)
-- [Modelagem](#Modelagem)
+- [Modelagem](#modelagem)
 	- [Diagramas de Classes](#classes)
 	- [Diagrama de Sequência](#sequencia)
 	- [Diagrama de Navegação](#navegacao)
@@ -19,7 +21,7 @@ Ao realizar o login ​, o usuário poderá visualizar os últimos relatos reali
 
 ## Justificativa
 
-Atualmente, existe uma grande dificuldade em encontrar objetos pessoais perdidos dentro da Universidade Federal de Santa Maria (UFSM). Quando algum membro da comunidade acadêmica perde algum pertence, este deve procurá-lo em lugares recorrentes (bibliotecas, coordenações, restaurantes universitários, redes sociais, etc.) na esperança de encontrar sua posse desaparecida. De mesmo modo, quando algum item é encontrado, não há um meio realmente efetivo para buscar e alertar seu portador.
+Atualmente, existe uma grande dificuldade em encontrar objetos pessoais perdidos dentro da UFSM. Quando algum membro da comunidade acadêmica perde algum pertence, este deve procurá-lo em lugares recorrentes (bibliotecas, coordenações, restaurantes universitários, redes sociais, etc.) na esperança de encontrar sua posse desaparecida. De mesmo modo, quando algum item é encontrado, não há um meio realmente efetivo para buscar e alertar seu portador.
 
 Com o uso do aplicativo, será possibilitado uma visualização rápida e interativa dos mais diversos relatos objetos achados ou perdidos dentro da universidade. Deste modo, espera-se que todo o processo de comunicação entre as partes envolvidas seja simplificado, favorecendo a recuperação de itens perdidos. Desta forma, a justificativa deste projeto está relacionada, mas não limitada, aos seguintes pontos:
 
@@ -43,12 +45,12 @@ Para o desenvolvimento da aplicação será utilizado o Android Studio, o ambien
 Seguindo o contexto do aplicativo “Perdeu?” e fazendo uso da ferramenta de modelagem Astah, que suporta UML, foram criados os seguintes diagramas:
 
 <a name="classes"></a>
-### Diagramas de Classes](#classes)
+### Diagramas de Classes
 
 Uma previsão do diagrama de classes referente a camada modelo da aplicação pode ser observada na figura abaixo. Por questões de isolamento da camada de negócios, não estão ilustradas neste diagrama classes referente a interfaces (Atividades) ou Adaptadores.
 
 <p class="center">
-	<img src="docs/modeling/ClassDiagram.png" />
+	<img src="docs/modeling/ClassDiagram.png" width="60%" />
 </p>
 
 - Usuário: Ator primário do sistema, entre suas ações realiza o cadastro de Achados e Perdidos;
@@ -63,21 +65,21 @@ Uma previsão do diagrama de classes referente a camada modelo da aplicação po
 \* Algumas das classes auxiliares podem não estar aplicadas ao contexto da versão inicial do aplicativo.
 
 <a name="sequencia"></a>
-### Diagrama de Sequência](#sequencia)
+### Diagrama de Sequência
 
 Um exemplo de interação com o sistema é ilustrado abaixo, note que a ação “Registrar Perda” é análoga a ação “Registar Achado”.
 
 <p class="center">
-	<img src="docs/modeling/SequenceDiagram.png" />
+	<img src="docs/modeling/SequenceDiagram.png" width="60%" />
 </p>
 
 <a name="navegacao"></a>
-### Diagrama de Navegação](#navegacao)
+### Diagrama de Navegação
 
 O diagrama abaixo ilustra o processo básico de navegação entre as diferentes Activities ​e Fragments.
 
 <p class="center">
-	<img src="docs/modeling/StatemachineDiagram.png" />
+	<img src="docs/modeling/StatemachineDiagram.png" width="60%" />
 </p>
 
 ## Cronograma
@@ -85,5 +87,5 @@ O diagrama abaixo ilustra o processo básico de navegação entre as diferentes 
 O cronograma de implementação segue o seguinte planejamento:
 
 <p class="center">
-	<img src="docs/cronograma.png" />
+	<img src="docs/cronograma.png" width="50%" />
 </p>
